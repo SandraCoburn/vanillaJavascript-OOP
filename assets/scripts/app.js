@@ -1,18 +1,29 @@
 class Product {
-  title = 'DEFAULT';
+  /*This can be removed since all these fields get instantiated in the constructor
+  title = 'DEFAULT'; //class field
   imageUrl;
   description;
   price;
+  */
   constructor(title, image, desc, price) {
-    this.title = title;
+    //class method
+    this.title = title; //class proptery
     this.imageURL = image;
     this.description = desc;
     this.price = price;
   }
 }
 
-const productList = {
-  products: [
+//Create a new class to handle logic to render a single product
+class ProductItem {
+  constructor(product) {
+    this.product = product;
+  }
+}
+
+// We create another list to handle some of the logic
+class ProductList {
+  products = [
     new Product(
       'A pillow',
       'https://images.unsplash.com/photo-1574346496016-72a8e1a32ccb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
@@ -48,8 +59,8 @@ const productList = {
       'Very colorful carpet',
       89.99
     ),
-  ],
-
+  ];
+  constructor() {}
   render() {
     const renderHook = document.getElementById('app');
     const prodList = document.createElement('ul');
@@ -71,7 +82,8 @@ const productList = {
       prodList.append(prodEl);
     }
     renderHook.append(prodList);
-  },
-};
+  }
+}
 
+const productList = new ProductList();
 productList.render();
