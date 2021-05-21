@@ -16,32 +16,37 @@ const productList = {
     new Product(
       'A pillow',
       'https://images.unsplash.com/photo-1574346496016-72a8e1a32ccb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-      19.99,
-      'Very soft pillow.'
+
+      'Very soft pillow.',
+      19.99
     ),
     new Product(
       'A Carpet',
       'https://images.unsplash.com/photo-1534889156217-d643df14f14a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FycGV0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      89.99,
-      'Very colorful carpet'
+
+      'Very colorful carpet',
+      89.99
     ),
     new Product(
       'A pillow',
       'https://images.unsplash.com/photo-1574346496016-72a8e1a32ccb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-      19.99,
-      'Very soft pillow.'
+
+      'Very soft pillow.',
+      19.99
     ),
     new Product(
       'A Carpet',
       'https://images.unsplash.com/photo-1534889156217-d643df14f14a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FycGV0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      89.99,
-      'Very colorful carpet'
+
+      'Very colorful carpet',
+      89.99
     ),
     new Product(
       'A Carpet',
       'https://images.unsplash.com/photo-1534889156217-d643df14f14a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FycGV0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      89.99,
-      'Very colorful carpet'
+
+      'Very colorful carpet',
+      89.99
     ),
   ],
 
