@@ -1,0 +1,29 @@
+html {
+  font-family: sans-serif;
+}
+
+form {
+  margin: 3rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.form-control {
+  margin: 1rem 0;
+}
+label,
+input {
+  display: block;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+input {
+  width: 20%;
+}
+button {
+  padding: 0.75rem;
+  background-color: blueviolet;
+  color: white;
+}
