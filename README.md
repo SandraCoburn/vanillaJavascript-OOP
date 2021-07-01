@@ -15,8 +15,8 @@ Influenced by a lot of factors. CSS code, HTML code and javaScript code. Also in
 - Startup time: Bundle/Script Size: Delays initial paring/execution. Number of Http Roundtrips(because of non-bundle code, third-party library CDN's): Delays initial parsing/execution
   - -> How quicklly is a user able to interact with the page?
   - -> how long does it take to see something on the screen?
-- Runtime performance: Optimize Dode Execution, DOM Access. Avoid Memory Leaks
-  - -> How smooth does the application run (are there freezes or lag)?
+- Runtime performance: Optimize Code Execution, DOM Access. Avoid Memory Leaks
+  - -> How smooth does the application run (are there any freezes or lag)?
   - -> How smooth do animations play, is there any "visual lag"?
   - -> Are there any memory leaks, is the page getting slower over time?
 
@@ -29,3 +29,34 @@ Influenced by a lot of factors. CSS code, HTML code and javaScript code. Also in
   - `jsperf.com` Compare alternative code snippets and measure performance
   - `webpagetest.com` Test your entire (live) web page to detect optimization potential
 - Explore best practices, patterns and benchmarks
+
+### Prototypes & "Method Types"
+
+- Method Shorthand -> assigned to Person's prototype and hence shared accross all instances (NOT recreated per instance)
+
+```
+class Person {
+  greet(){
+    console.log("Hello")
+  }
+}
+```
+
+- Property Functon -> Assigned to individual instances and hence recreated per object. this refers to "what called the method".
+
+```
+class Person {
+  greet = function(){...}
+  constructor({
+    this.greet2 = function(){...}
+  })
+}
+- Property Arrow Function -> Assigned to individual instances and hence recreated per object. this always refers to instance.
+```
+
+class Person {
+greet = ()=>{...}
+constructor(){
+this.greet2 = () => {...}
+}
+}
