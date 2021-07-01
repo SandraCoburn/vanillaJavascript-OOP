@@ -56,3 +56,41 @@ secondFruit.describe();
 //Add a button that uses an instance of a class and the method
 const button = document.getElementById('btn');
 button.addEventListener('click', secondFruit.describe.bind(secondFruit));
+
+//Setting and getting Prototypes
+const course = {
+  // new Object()
+  tittle: 'Javascript',
+  rating: 4,
+};
+//This set the prototype as a new object
+Object.setPrototypeOf(course, {
+  printRating: function () {
+    console.log(`${this.rating}/5`);
+  },
+});
+//This leaves the previous functionality of the course object and adds the printing method
+Object.setPrototypeOf(course, {
+  ...Object.getPrototypeOf(course),
+  printTitle: function () {
+    console.log(this.tittle);
+  },
+});
+
+//To ad new properties to an empty object:
+const student = Object.create({
+  printProgress: function () {
+    console.log(this.progress);
+  },
+});
+student.name = 'Max';
+
+Object.defineProperties(student, 'progress', {
+  configurable: true,
+  enumerable: true,
+  value: 0.8,
+  witable: false,
+});
+
+course.printRating();
+course.printTitle();

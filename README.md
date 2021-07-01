@@ -60,3 +60,18 @@ constructor(){
 this.greet2 = () => {...}
 }
 }
+
+### Constructor Functions vs Classes
+
+- Constructor Functions:
+  - Blueprint for Objects
+  - Properties & Methods
+  - Can be called with new
+  - All properties and methods are enumerable
+  - Not in strict mode by default
+- Classes:
+  - Blueprint for Objects
+  - Properties and Methods
+  - Must be called with new
+  - All properties and methods are not enumerables
+  - Always in strict mode
